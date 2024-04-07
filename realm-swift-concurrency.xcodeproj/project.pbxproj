@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8C59EA12BC269080066A126 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C59EA02BC269080066A126 /* TodoRepository.swift */; };
+		A8C59EA42BC26C4B0066A126 /* TodoListGetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C59EA32BC26C4B0066A126 /* TodoListGetInteractor.swift */; };
+		A8C59EA72BC2798F0066A126 /* TodoListGetAddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C59EA62BC2798F0066A126 /* TodoListGetAddInteractor.swift */; };
+		A8C59EBC2BC2830C0066A126 /* TodoDataStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C59EAD2BC282480066A126 /* TodoDataStoreTest.swift */; };
+		A8D2780D2BB597120068DC61 /* TodoDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D2780C2BB597120068DC61 /* TodoDataStore.swift */; };
+		A8D278102BB597420068DC61 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D2780F2BB597420068DC61 /* TodoEntity.swift */; };
+		A8D278132BB597C60068DC61 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D278122BB597C60068DC61 /* TodoModel.swift */; };
+		A8E504232BB44AE500B2711D /* realm_swift_concurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E504222BB44AE500B2711D /* realm_swift_concurrencyApp.swift */; };
+		A8E504252BB44AE500B2711D /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E504242BB44AE500B2711D /* TodoListView.swift */; };
+		A8E504272BB44AE600B2711D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E504262BB44AE600B2711D /* Assets.xcassets */; };
+		A8E5042A2BB44AE600B2711D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E504292BB44AE600B2711D /* Preview Assets.xcassets */; };
+		A8E504312BB44BD500B2711D /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E504302BB44BD500B2711D /* TodoListViewModel.swift */; };
+		A8EB2ACB2BB44F7800E89544 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A8EB2ACA2BB44F7800E89544 /* Realm */; };
+		A8EB2ACD2BB44F7800E89544 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A8EB2ACC2BB44F7800E89544 /* RealmSwift */; };
+		A8EB2AD02BB44F9100E89544 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A8EB2ACF2BB44F9100E89544 /* AsyncAlgorithms */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8C59EB72BC282ED0066A126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E504172BB44AE500B2711D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E5041E2BB44AE500B2711D;
+			remoteInfo = "realm-swift-concurrency";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8C59EA02BC269080066A126 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		A8C59EA32BC26C4B0066A126 /* TodoListGetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListGetInteractor.swift; sourceTree = "<group>"; };
+		A8C59EA62BC2798F0066A126 /* TodoListGetAddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListGetAddInteractor.swift; sourceTree = "<group>"; };
+		A8C59EAD2BC282480066A126 /* TodoDataStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDataStoreTest.swift; sourceTree = "<group>"; };
+		A8C59EB32BC282ED0066A126 /* realm-swift-concurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realm-swift-concurrencyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D2780C2BB597120068DC61 /* TodoDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDataStore.swift; sourceTree = "<group>"; };
+		A8D2780F2BB597420068DC61 /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		A8D278122BB597C60068DC61 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		A8E5041F2BB44AE500B2711D /* realm-swift-concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realm-swift-concurrency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E504222BB44AE500B2711D /* realm_swift_concurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realm_swift_concurrencyApp.swift; sourceTree = "<group>"; };
+		A8E504242BB44AE500B2711D /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		A8E504262BB44AE600B2711D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E504292BB44AE600B2711D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8E504302BB44BD500B2711D /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8C59EB02BC282ED0066A126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E5041C2BB44AE500B2711D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB2ACD2BB44F7800E89544 /* RealmSwift in Frameworks */,
+				A8EB2ACB2BB44F7800E89544 /* Realm in Frameworks */,
+				A8EB2AD02BB44F9100E89544 /* AsyncAlgorithms in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8C59E9B2BC2689E0066A126 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				A8E504322BB44BE200B2711D /* Module */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		A8C59E9C2BC268AF0066A126 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59E9D2BC268B40066A126 /* Domain */,
+				A8D2780A2BB596CF0068DC61 /* Infra */,
+				A8C59EB42BC282ED0066A126 /* realm-swift-concurrencyTests */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A8C59E9D2BC268B40066A126 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A8D278112BB597B10068DC61 /* Model */,
+				A8C59E9F2BC268DC0066A126 /* Repositories */,
+				A8C59E9E2BC268D40066A126 /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A8C59E9E2BC268D40066A126 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EA52BC279840066A126 /* TodoListGetAdd */,
+				A8C59EA22BC26C3B0066A126 /* TodoListGet */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		A8C59E9F2BC268DC0066A126 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EA02BC269080066A126 /* TodoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A8C59EA22BC26C3B0066A126 /* TodoListGet */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EA32BC26C4B0066A126 /* TodoListGetInteractor.swift */,
+			);
+			path = TodoListGet;
+			sourceTree = "<group>";
+		};
+		A8C59EA52BC279840066A126 /* TodoListGetAdd */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EA62BC2798F0066A126 /* TodoListGetAddInteractor.swift */,
+			);
+			path = TodoListGetAdd;
+			sourceTree = "<group>";
+		};
+		A8C59EA82BC281B20066A126 /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EA92BC281BF0066A126 /* InfraTests */,
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		A8C59EA92BC281BF0066A126 /* InfraTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EAA2BC281CF0066A126 /* Todo */,
+			);
+			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		A8C59EAA2BC281CF0066A126 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EAD2BC282480066A126 /* TodoDataStoreTest.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		A8C59EB42BC282ED0066A126 /* realm-swift-concurrencyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59EA82BC281B20066A126 /* CoreTests */,
+			);
+			path = "realm-swift-concurrencyTests";
+			sourceTree = "<group>";
+		};
+		A8C59EBD2BC2834C0066A126 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8D2780A2BB596CF0068DC61 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				A8D2780B2BB597040068DC61 /* Todo */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		A8D2780B2BB597040068DC61 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				A8D2780E2BB597350068DC61 /* Entity */,
+				A8D2780C2BB597120068DC61 /* TodoDataStore.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		A8D2780E2BB597350068DC61 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A8D2780F2BB597420068DC61 /* TodoEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A8D278112BB597B10068DC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8D278122BB597C60068DC61 /* TodoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8E504162BB44AE500B2711D = {
+			isa = PBXGroup;
+			children = (
+				A8E504212BB44AE500B2711D /* realm-swift-concurrency */,
+				A8E504202BB44AE500B2711D /* Products */,
+				A8C59EBD2BC2834C0066A126 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8E504202BB44AE500B2711D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5041F2BB44AE500B2711D /* realm-swift-concurrency.app */,
+				A8C59EB32BC282ED0066A126 /* realm-swift-concurrencyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E504212BB44AE500B2711D /* realm-swift-concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				A8C59E9B2BC2689E0066A126 /* Feature */,
+				A8C59E9C2BC268AF0066A126 /* Core */,
+				A8E504222BB44AE500B2711D /* realm_swift_concurrencyApp.swift */,
+				A8E504262BB44AE600B2711D /* Assets.xcassets */,
+				A8E504282BB44AE600B2711D /* Preview Content */,
+			);
+			path = "realm-swift-concurrency";
+			sourceTree = "<group>";
+		};
+		A8E504282BB44AE600B2711D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8E504292BB44AE600B2711D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8E504322BB44BE200B2711D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A8E504332BB44C0700B2711D /* TodoList */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A8E504332BB44C0700B2711D /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB2AC72BB44F0A00E89544 /* View */,
+				A8EB2AC82BB44F1300E89544 /* ViewModel */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		A8EB2AC72BB44F0A00E89544 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8E504242BB44AE500B2711D /* TodoListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8EB2AC82BB44F1300E89544 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8E504302BB44BD500B2711D /* TodoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8C59EB22BC282ED0066A126 /* realm-swift-concurrencyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C59EB92BC282ED0066A126 /* Build configuration list for PBXNativeTarget "realm-swift-concurrencyTests" */;
+			buildPhases = (
+				A8C59EAF2BC282ED0066A126 /* Sources */,
+				A8C59EB02BC282ED0066A126 /* Frameworks */,
+				A8C59EB12BC282ED0066A126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C59EB82BC282ED0066A126 /* PBXTargetDependency */,
+			);
+			name = "realm-swift-concurrencyTests";
+			packageProductDependencies = (
+			);
+			productName = "realm-swift-concurrencyTests";
+			productReference = A8C59EB32BC282ED0066A126 /* realm-swift-concurrencyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8E5041E2BB44AE500B2711D /* realm-swift-concurrency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E5042D2BB44AE600B2711D /* Build configuration list for PBXNativeTarget "realm-swift-concurrency" */;
+			buildPhases = (
+				A8E5041B2BB44AE500B2711D /* Sources */,
+				A8E5041C2BB44AE500B2711D /* Frameworks */,
+				A8E5041D2BB44AE500B2711D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "realm-swift-concurrency";
+			packageProductDependencies = (
+				A8EB2ACA2BB44F7800E89544 /* Realm */,
+				A8EB2ACC2BB44F7800E89544 /* RealmSwift */,
+				A8EB2ACF2BB44F9100E89544 /* AsyncAlgorithms */,
+			);
+			productName = "realm-swift-concurrency";
+			productReference = A8E5041F2BB44AE500B2711D /* realm-swift-concurrency.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8E504172BB44AE500B2711D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A8C59EB22BC282ED0066A126 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A8E5041E2BB44AE500B2711D;
+					};
+					A8E5041E2BB44AE500B2711D = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = A8E5041A2BB44AE500B2711D /* Build configuration list for PBXProject "realm-swift-concurrency" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8E504162BB44AE500B2711D;
+			packageReferences = (
+				A8EB2AC92BB44F7800E89544 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				A8EB2ACE2BB44F9100E89544 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
+			productRefGroup = A8E504202BB44AE500B2711D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8E5041E2BB44AE500B2711D /* realm-swift-concurrency */,
+				A8C59EB22BC282ED0066A126 /* realm-swift-concurrencyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8C59EB12BC282ED0066A126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E5041D2BB44AE500B2711D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E5042A2BB44AE600B2711D /* Preview Assets.xcassets in Resources */,
+				A8E504272BB44AE600B2711D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8C59EAF2BC282ED0066A126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C59EBC2BC2830C0066A126 /* TodoDataStoreTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E5041B2BB44AE500B2711D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D278102BB597420068DC61 /* TodoEntity.swift in Sources */,
+				A8E504312BB44BD500B2711D /* TodoListViewModel.swift in Sources */,
+				A8E504252BB44AE500B2711D /* TodoListView.swift in Sources */,
+				A8C59EA72BC2798F0066A126 /* TodoListGetAddInteractor.swift in Sources */,
+				A8C59EA42BC26C4B0066A126 /* TodoListGetInteractor.swift in Sources */,
+				A8C59EA12BC269080066A126 /* TodoRepository.swift in Sources */,
+				A8D278132BB597C60068DC61 /* TodoModel.swift in Sources */,
+				A8E504232BB44AE500B2711D /* realm_swift_concurrencyApp.swift in Sources */,
+				A8D2780D2BB597120068DC61 /* TodoDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8C59EB82BC282ED0066A126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E5041E2BB44AE500B2711D /* realm-swift-concurrency */;
+			targetProxy = A8C59EB72BC282ED0066A126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8C59EBA2BC282ED0066A126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2D8FGCF2N4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t-toshasegaw.realm-swift-concurrencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realm-swift-concurrency.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/realm-swift-concurrency";
+			};
+			name = Debug;
+		};
+		A8C59EBB2BC282ED0066A126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2D8FGCF2N4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t-toshasegaw.realm-swift-concurrencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realm-swift-concurrency.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/realm-swift-concurrency";
+			};
+			name = Release;
+		};
+		A8E5042B2BB44AE600B2711D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8E5042C2BB44AE600B2711D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8E5042E2BB44AE600B2711D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"realm-swift-concurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = 2D8FGCF2N4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t-toshasegaw.realm-swift-concurrency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E5042F2BB44AE600B2711D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"realm-swift-concurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = 2D8FGCF2N4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t-toshasegaw.realm-swift-concurrency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8C59EB92BC282ED0066A126 /* Build configuration list for PBXNativeTarget "realm-swift-concurrencyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C59EBA2BC282ED0066A126 /* Debug */,
+				A8C59EBB2BC282ED0066A126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E5041A2BB44AE500B2711D /* Build configuration list for PBXProject "realm-swift-concurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E5042B2BB44AE600B2711D /* Debug */,
+				A8E5042C2BB44AE600B2711D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E5042D2BB44AE600B2711D /* Build configuration list for PBXNativeTarget "realm-swift-concurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E5042E2BB44AE600B2711D /* Debug */,
+				A8E5042F2BB44AE600B2711D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8EB2AC92BB44F7800E89544 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A8EB2ACE2BB44F9100E89544 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8EB2ACA2BB44F7800E89544 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EB2AC92BB44F7800E89544 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		A8EB2ACC2BB44F7800E89544 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EB2AC92BB44F7800E89544 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		A8EB2ACF2BB44F9100E89544 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EB2ACE2BB44F9100E89544 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A8E504172BB44AE500B2711D /* Project object */;
+}
